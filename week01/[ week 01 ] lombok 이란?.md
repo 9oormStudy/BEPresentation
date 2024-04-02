@@ -1,4 +1,4 @@
-**Lombok :** Java 라이브러리로 반복되는 getter, setter, toString .. 등의 반복 메서드 작성 코드를 줄일수 있는 코드 다이어트 라이브러리이다.
+**Lombok :** Java 라이브러리중 하나로 반복되는 getter, setter, toString .. 등의 반복 메서드 작성 코드를 줄일수 있는 코드 다이어트 라이브러리이다.
 
 **그래서 롬복이란?**
 
