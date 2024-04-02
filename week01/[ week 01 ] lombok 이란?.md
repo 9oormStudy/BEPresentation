@@ -90,7 +90,6 @@ public class Store extends Common {
 **Lombok 어노테이션 정리**
 
 | @Getter | code가 컴파일 될 때 getter 메서드들을 생성한다. |
-| --- | --- |
 | @Setter | code가 컴파일 될 때 setter 메서드들을 생성한다. |
 | @ToString | toString() 메서드를 생성한다. |
 | @EqualsAndHashCode | 사용 객체에 대해서 equals(), hashCode() 메서드를 생성한다. |
