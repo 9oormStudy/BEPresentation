@@ -95,9 +95,7 @@ public class Store extends Common {
 | @Setter | code가 컴파일 될 때 setter 메서드들을 생성한다. |
 | @ToString | toString() 메서드를 생성한다. |
 | @EqualsAndHashCode | 사용 객체에 대해서 equals(), hashCode() 메서드를 생성한다. |
-| @Data | @Getter(모든속성), @Setter(final이 붙지 않은), @ToString, 
-@EqualsAndHashCode, @RequiredArgsConstructor
-위의 어노테이션들을 합쳐둔 어노테이션이다.  |
+| @Data | 위의 어노테이션들을 합쳐둔 어노테이션이다.  |
 | @NoArgsConstructor | 파라미터(매개변수)가 없는 생성자를 생성한다. |
 | @RequiredArgsConstructor | final, @NonNull이 있는 필드를 포함하여 생성자를 생성한다. |
 | @AllArgsConstructor | 모든 필드를 파라미터(매개변수)로 갖는 생성자를 생성한다. |
