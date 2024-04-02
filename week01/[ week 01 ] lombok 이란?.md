@@ -90,6 +90,7 @@ public class Store extends Common {
 **Lombok 어노테이션 정리**
 
 
+| @Getter | code가 컴파일 될 때 getter 메서드들을 생성한다. |
 | --- | --- |
 | @Setter | code가 컴파일 될 때 setter 메서드들을 생성한다. |
 | @ToString | toString() 메서드를 생성한다. |
@@ -108,8 +109,6 @@ public class Store extends Common {
 | @NonNull | 필드의 값이 null이 될 수 없음을 명시해준다. |
 | @Value |  모든 필드를 Private, Final 로 설정하고, Setter를 생성하지 않는다.(상수로 만들어준다.)
  FInal 이 붙기 때문에 Setter는 존재할 수가 없는것이다. |
-
-많은 어노테이션이 있지만 안정화 이슈로 자주 사용하는것은 @Getter,@Setter,@ToString,@Data 이다.
 
 **-Lombok 의 장점-**
 
