@@ -95,18 +95,16 @@ public class Store extends Common {
 | @Setter | code가 컴파일 될 때 setter 메서드들을 생성한다. |
 | @ToString | toString() 메서드를 생성한다. |
 | @EqualsAndHashCode | 사용 객체에 대해서 equals(), hashCode() 메서드를 생성한다. |
-| @Data | 위의 어노테이션들을 합쳐둔 어노테이션이다.  |
+| @Data | Getter(모든속성), Setter(final이 붙지 않은), ToString, EqualsAndHashCode, RequiredArgsConstructor위의 어노테이션들을 합쳐둔 어노테이션이다.   |
 | @NoArgsConstructor | 파라미터(매개변수)가 없는 생성자를 생성한다. |
 | @RequiredArgsConstructor | final, @NonNull이 있는 필드를 포함하여 생성자를 생성한다. |
 | @AllArgsConstructor | 모든 필드를 파라미터(매개변수)로 갖는 생성자를 생성한다. |
 | @Builder | 해당 클래스에 빌더 패턴을 사용할 수 있도록 해준다. |
-| @Log | 컴파일시 : private static final java.util.logging.Logger log = java.util.logging.Logger.getLogger(this.class.getName());
--> 해당 코드가 생성되는것이다. |
+| @Log | 컴파일시 : private static final java.util.logging.Logger log = java.util.logging.Logger.getLogger(this.class.getName()); -> 해당 코드가 생성되는것이다. |
 | @Log4j, @Slf4J | Log4J(Slf4J) 설정을 이용하여 로그 기능 사용할 수있다.마찬가지로 log 변수를 통해 사용 한다. |
 | @Synchronized |  동기화 관련 문제 발생을 해당 어노테이션을 통해 가상의 필드 레벨에서 조금이나마 안전하게 락을 걸어준다. |
 | @NonNull | 필드의 값이 null이 될 수 없음을 명시해준다. |
-| @Value |  모든 필드를 Private, Final 로 설정하고, Setter를 생성하지 않는다.(상수로 만들어준다.)
- FInal 이 붙기 때문에 Setter는 존재할 수가 없는것이다. |
+| @Value |  모든 필드를 Private, Final 로 설정하고, Setter를 생성하지 않는다.(상수로 만들어준다.) FInal 이 붙기 때문에 Setter는 존재할 수가 없는것이다. |
 
 **-Lombok 의 장점-**
 
