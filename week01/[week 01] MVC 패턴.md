@@ -356,4 +356,4 @@ public class MemberSaveControllerV4 implements ControllerV4 {
     }
 ```
 - 파라미터에 Model 객체와 model.addAttrubute() 도 생략 가능
-- return "basic/item" : 뷰 이름을 반환하면 ViewResolver 가 동작해서 뷰 생성 
+- return "basic/item" : 뷰 이름을 반환하면 ViewResolver 가 동작해서 뷰 생성
