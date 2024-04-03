@@ -168,6 +168,8 @@ public class MyView {
 ### 변경점
 - ModelView 객체 추가: HttpServletRequest 객체를 Model 로 사용하는 대신에 별도의 Model 객체를 만들어서 사용한다. 
 - ViewResolver 추가: 뷰의 논리이름을 반환하고 실제 이름은 프론트 컨트롤러에서 처리하도록 한다. 
+- createParamMap 함수 추가 : HttpServletRequest 객체를 사용하지 않기 때문에 paramMap 객체에 저장하고 컨트롤러로 전달 
+- modelToRequestAttribute 메서드 추가 : MyView 로 전달하는 model 객체는 단순히 Map 이기 때문에 request 객체에 저장하는 함수 추가. 
 
 ### 실행 순서                         
 1. 프론트 컨트롤러 호출
