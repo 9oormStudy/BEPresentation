@@ -18,20 +18,20 @@
 
 ### 속성
 
-|th:text:|HTML 태그의 텍스트를 수정합니다.|
-|th:if| 지정된 조건이 참인 경우 HTML 요소를 표시합니다.|
-|th:unless| 지정된 조건이 거짓인 경우 HTML 요소를 표시합니다.|
-|th:switch| 지정된 조건에 따라 여러 HTML 요소 중 하나를 표시합니다.|
-|th:case| th:switch와 함께 사용되어 해당 case의 조건이 참인 경우 해당 HTML 요소를 표시합니다.|
-|th:each| 반복문을 실행하여 HTML 요소를 생성합니다.|
-|th:object| HTML 태그에 객체를 바인딩합니다.|
-|th:field| 폼 필드에 데이터를 바인딩합니다.|
-|th:action| 폼의 액션 URL을 설정합니다.|
-|th:method| 폼의 HTTP 메서드를 설정합니다.|
-|th:attr| HTML 태그의 속성을 수정합니다.|
-|th:replace| 지정된 템플릿을 현재 요소에 대체합니다.|
-|th:remove| HTML 요소를 제거합니다.|
-|th:with| 변수를 정의하고 값에 대한 참조를 제공합니다.|
+- th:text : HTML 태그의 텍스트를 수정합니다.
+- th:if : 지정된 조건이 참인 경우 HTML 요소를 표시합니다.
+- th:unless : 지정된 조건이 거짓인 경우 HTML 요소를 표시합니다.
+- th:switch : 지정된 조건에 따라 여러 HTML 요소 중 하나를 표시합니다.
+- th:case : th:switch와 함께 사용되어 해당 case의 조건이 참인 경우 해당 HTML 요소를 표시합니다.
+- th:each : 반복문을 실행하여 HTML 요소를 생성합니다.
+- th:object : HTML 태그에 객체를 바인딩합니다.
+- th:field : 폼 필드에 데이터를 바인딩합니다.
+- th:action : 폼의 액션 URL을 설정합니다.
+- th:method : 폼의 HTTP 메서드를 설정합니다.
+- th:attr : HTML 태그의 속성을 수정합니다.
+- th:replace : 지정된 템플릿을 현재 요소에 대체합니다.
+- th:remove : HTML 요소를 제거합니다.
+- th:with : 변수를 정의하고 값에 대한 참조를 제공합니다.
 
 
 ### 도메인 구성
