@@ -97,6 +97,8 @@ RequestMappingHandlerAdapter는 @RequestMapping 어노테이션으로 선언된 
 
 ### HandlerAdapter 동작 과정
 
+---
+
 ![스크린샷 2024-04-08 오전 12 58 22](https://github.com/9oormStudy/BEPresentation/assets/159230525/2d7f85b1-ef30-46e1-9c7d-970c5c1e0af8)
 
 ### Argument Resolver란?
