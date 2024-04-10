@@ -1,6 +1,6 @@
 # 내부 작동 원리로 이해하는 스프링 인터셉터
 
-스프링 인터셉터는 모든 요청을 처리하는 디스패처 서블릿의(DispatcherServlet) doDispatch 메서드에서 아래와 같은 구조로 컨트롤러 호출 전, 후 로 실행하는 구조로 되어있습니다.
+스프링 인터셉터는 모든 요청을 처리하는 디스패처 서블릿(DispatcherServlet) 의 doDispatch 메서드에서 아래와 같은 구조로 컨트롤러 호출 전, 후 로 실행하는 구조로 되어있습니다.
 
 `DispatcherServlet` 클래스의 doDispatch 메소드
 ```java
