@@ -59,9 +59,9 @@ public class LoginMemberArgumentResolver implements HandlerMethodArgumentResolve
     2. 정보를 넣고자 하는 member 클래스인지 확인한다.
 - resolveArgument
   - supportsParameter에서 true가 넘어올 시 실행된다.
-    a. NativeWebRequest를 HttpServletRequest로 변환한다.
-    b. request.getSession(false)로 하여 session이 없다면 생성하지 않는다.
-    c. session이 있다면 로그인을 기존에 한 회원이므로 session.getAttribute(SessionConst.LOGIN_MEMBER)를 실행하여 로그인 회원 정보인 member 객체를 찾아 반환해준다.
+    1. NativeWebRequest를 HttpServletRequest로 변환한다.
+    2. request.getSession(false)로 하여 session이 없다면 생성하지 않는다.
+    3. session이 있다면 로그인을 기존에 한 회원이므로 session.getAttribute(SessionConst.LOGIN_MEMBER)를 실행하여 로그인 회원 정보인 member 객체를 찾아 반환해준다.
 
 ### 4. MVC에서 사용할 수 있도록 WebConfig에 등록
 
@@ -102,12 +102,10 @@ public String homeLoginV3ArgumentResolver(@Login Member loginMember, Model model
 
 ---
 
-<img width="600" alt="스크린샷 2024-04-15 오후 11 05 11" src="https://github.com/9oormStudy/BEPresentation/assets/159230525/0ce9a742-6f4a-4af7-abb1-bfe90df3beaf">
-
+홈 화면에 접속 했을 때, 아직 로그인 하기 전이고 세션에 데이터가 없으면
 <img width="511" alt="스크린샷 2024-04-15 오후 11 11 28" src="https://github.com/9oormStudy/BEPresentation/assets/159230525/e12f2fb9-ad7c-420b-b6bc-fe26018d5e22">
 
-<img width="600" alt="스크린샷 2024-04-15 오후 11 06 11" src="https://github.com/9oormStudy/BEPresentation/assets/159230525/e664ffcb-037b-47eb-9647-01c15293f930">
-
+로그인 후 홈 화면에 접속 했을 때, 세션을 생성해서 반환하면
 <img width="600" alt="스크린샷 2024-04-15 오후 11 06 47" src="https://github.com/9oormStudy/BEPresentation/assets/159230525/01eefd08-bd5f-43e7-9d83-b1196b67e616">
 
 <img width="861" alt="스크린샷 2024-04-15 오후 11 11 58" src="https://github.com/9oormStudy/BEPresentation/assets/159230525/a933c009-39d2-4848-aa40-29be62ea24de">
