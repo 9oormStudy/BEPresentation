@@ -1,6 +1,7 @@
 ## 커넥션 풀
 
-![alt text](image.png)
+![image](https://github.com/9oormStudy/BEPresentation/assets/53373279/73cc8acf-817c-4ca3-8f6b-41e7d2d9dc84)
+
 
 - 데이터베이스 커넥션을 획득할 때는 다음과 같은 복잡한 과정을 거친다. 
   1. DB 드라이버를 통해 커넥션 조회
@@ -15,7 +16,8 @@
 
 이런 문제를 해결할 수 있는 아이디어가 커넥션을 미리 생성해두고 사용하는 커넥션 풀이라는 방법이다. 
 
-![alt text](image-2.png)
+![image-1](https://github.com/9oormStudy/BEPresentation/assets/53373279/378e87f8-457d-4a4b-a312-a47ec1276c9c)
+
 
 - 애플리케이션을 시작하는 시점에 커넥션을 미리 확보해서 풀에 보관한다. 
 - DB 드라이버를 통해 새로운 커넥션을 획득하는 것이 아니다. 
@@ -25,11 +27,13 @@
 
 ## DataSource 
 
-![alt text](image-3.png)
+![image-2](https://github.com/9oormStudy/BEPresentation/assets/53373279/9a8b34bf-3d2d-40ee-87ca-87da2109ce68)
+
 
 - 커넥션을 얻는 방법은 JDBC Driver Manager 를 사용하거나, 커넥션 풀을 사용하는 등 다양한 방법이 존재한다. 
 
-![alt text](image-4.png)
+![image-4](https://github.com/9oormStudy/BEPresentation/assets/53373279/521dd723-fb73-4825-a4d2-c7da9c4a8b4c)
+
 
 - Driver Manager 를 통해 커넥션을 획득하다가 커넥션 풀로 변경하게 되면 의존관계가 DriverManager 에서 HikariCP 로 변경되기 때문에 애플리케이션 코드도 함께 변경해야 한다. 
 
@@ -50,7 +54,8 @@
     }
 ```
 
-![alt text](image-5.png)
+![image-5](https://github.com/9oormStudy/BEPresentation/assets/53373279/57d08b98-a50e-4dab-be7d-e6b044546229)
+
 
 - 자바에서는 이런 문제를 해결하기 위해 DataSource 라는 인터페이스를 제공한다. 
 - DriverManager 는 DataSource 인터페이스를 사용하지 않는다. 
