@@ -9,7 +9,7 @@
 
 ## FRI 발표자
 
-- 박은성 : 내부 작동 원리로 이해하는 스프링 인터셉터
+- 박은성 : [내부 작동 원리로 이해하는 스프링 인터셉터](https://github.com/9oormStudy/BEPresentation/blob/main/week02/%5Bweek%2002%5D%20%EB%82%B4%EB%B6%80%20%EC%9E%91%EB%8F%99%20%EC%9B%90%EB%A6%AC%EB%A1%9C%20%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9D%B8%ED%84%B0%EC%85%89%ED%84%B0.md)
 - 배한솔 : -
-- 서재 : 사용자 인증 방식
-- 윤창기 : REST API
+- 서재 : [사용자 인증 방식](https://github.com/9oormStudy/BEPresentation/blob/main/week02/%5Bweek%2002%5D%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EC%9D%B8%EC%A6%9D%20%EB%B0%A9%EC%8B%9D.md)
+- 윤창기 : [REST API](https://github.com/9oormStudy/BEPresentation/blob/main/week02/%5Bweek%2002%5D%20REST%20API.md)
