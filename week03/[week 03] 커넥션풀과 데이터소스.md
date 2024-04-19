@@ -38,13 +38,15 @@
 - Driver Manager 를 통해 커넥션을 획득하다가 커넥션 풀로 변경하게 되면 의존관계가 DriverManager 에서 HikariCP 로 변경되기 때문에 애플리케이션 코드도 함께 변경해야 한다. 
 
 ```java
+    //MemberRepositoryV0 에서 커넥션을 받는 메소드 
     private Connection getConnection() {
         return DBConnectionUtil.getConnection();
     }
 
+    //직접 만든 DBConnectionUtil 클래스
     public static Connection getConnection() {
         try {
-            //DriverManager.getConnection() 에서 커넥션을 받아 옴
+            //DriverManager 에서 커넥션을 받아 옴 HikariCP로 변경 시 코드 변경 필요함 
             Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             log.info("get connection={}, class={}", connection, connection.getClass());
             return connection;
@@ -57,9 +59,9 @@
 ![image-5](https://github.com/9oormStudy/BEPresentation/assets/53373279/57d08b98-a50e-4dab-be7d-e6b044546229)
 
 
-- 자바에서는 이런 문제를 해결하기 위해 DataSource 라는 인터페이스를 제공한다. 
-- DriverManager 는 DataSource 인터페이스를 사용하지 않는다. 
-- DataSource 인터페이스를 사용하지 않으면 커넥션 풀을 사용하도록 변경할 때 관련 코드를 전부 수정해야 한다.
+- 자바에서는 이런 문제를 해결하기 위해 DataSource 라는 인터페이스를 제공한다.
+- DatsSource 인터페이스에 의존하게 되면 커넥션을 받아오는 방법을 변경해도 애플리케이션 코드를 변경할 필요가 없어진다. 
+- DriverManager 는 DataSource 인터페이스를 사용하지 않기 때문에 커넥션 풀을 사용하도록 변경할 때 관련 코드를 전부 수정해야 한다.
 - 이런 문제를 해결하기 위해 스프링은 DriverManager 도 DataSource 를 사용할 수 있도록 DriverManagerDataSource 라는 클래스를 제공한다. 
 
 ``` java 
