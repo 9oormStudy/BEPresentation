@@ -9,7 +9,7 @@
 
 ## FRI 발표자
 
-- 박은성
-- 배한솔
-- 서재
-- 윤창기
+- 박은성 : [HTTP API 응답 과정 알아보기](https://github.com/9oormStudy/BEPresentation/blob/main/week01/%5B%20week%2001%20%5D%20HTTP%20API%20%EC%9D%91%EB%8B%B5%20%EA%B3%BC%EC%A0%95%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md)
+- 배한솔 : [Lombok이란?](https://github.com/9oormStudy/BEPresentation/blob/main/week01/%5B%20week%2001%20%5D%20lombok%20%EC%9D%B4%EB%9E%80%3F.md)
+- 서재 : [서블릿](https://github.com/9oormStudy/BEPresentation/blob/main/week01/%5Bweek%2001%5D%20%EC%84%9C%EB%B8%94%EB%A6%BF.md)
+- 윤창기 : [MVC패턴](https://github.com/9oormStudy/BEPresentation/blob/main/week01/%5Bweek%2001%5D%20MVC%20%ED%8C%A8%ED%84%B4.md)
