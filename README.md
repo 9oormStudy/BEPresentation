@@ -42,3 +42,9 @@
     <td align="center"><a href="https://github.com/changkiyun"><b>윤창기</b></a></td>
   </tr>
 </table>
+
+### 발표 모음
+
+- [1주차 발표 모음](https://github.com/9oormStudy/BEPresentation/blob/main/week01/README.md)
+- [2주차 발표 모음](https://github.com/9oormStudy/BEPresentation/blob/main/week02/README.md)
+- [3주차 발표 모음](https://github.com/9oormStudy/BEPresentation/blob/main/week03/README.md)
